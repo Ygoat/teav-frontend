@@ -19,9 +19,9 @@ import { NavBarComponent } from './landing/nav-bar/nav-bar.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      { path:'/landing',component: LandingComponent},
-      { path:'/top',component: TopMenuComponent},
-      { path:'/navbar',component: NavBarComponent}
+      { path:'landing',component: LandingComponent},
+      { path:'top',component: TopMenuComponent},
+      { path:'navbar',component: NavBarComponent}
     ])
   ],
   providers: [],
