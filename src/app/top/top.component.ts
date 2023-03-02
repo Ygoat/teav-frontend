@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-top-menu',
-  templateUrl: './top-menu.component.html',
-  styleUrls: ['./top-menu.component.scss']
+  templateUrl: './top.component.html',
+  styleUrls: ['./top.component.scss']
 })
 export class TopMenuComponent {
 

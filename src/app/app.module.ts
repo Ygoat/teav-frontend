@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
-import { TopMenuComponent } from './top-menu/top-menu.component';
+import { TopMenuComponent } from './top/top.component';
 import { NavBarComponent } from './landing/nav-bar/nav-bar.component';
 
 @NgModule({
@@ -19,7 +19,7 @@ import { NavBarComponent } from './landing/nav-bar/nav-bar.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      { path:'landing',component: LandingComponent},
+      { path:'',component: LandingComponent},
       { path:'top',component: TopMenuComponent},
       { path:'navbar',component: NavBarComponent}
     ])
