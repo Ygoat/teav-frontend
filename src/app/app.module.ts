@@ -4,9 +4,9 @@ import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LandingComponent } from './landing/landing.component';
+import { LandingComponent } from './pages/landing/landing.component';
 import { TopMenuComponent } from './top/top.component';
-import { NavBarComponent } from './landing/nav-bar/nav-bar.component';
+import { NavBarComponent } from './utils/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
