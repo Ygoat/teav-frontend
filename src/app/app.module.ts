@@ -8,6 +8,7 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { TopMenuComponent } from './pages/top/top.component';
 import { NavBarComponent } from './utils/navbar/navbar.component';
 import { MenubarComponent } from './utils/menubar/menubar.component';
+import { MembersComponent } from './pages/members/members.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MenubarComponent } from './utils/menubar/menubar.component';
     LandingComponent,
     TopMenuComponent,
     NavBarComponent,
-    MenubarComponent
+    MenubarComponent,
+    MembersComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,8 @@ import { MenubarComponent } from './utils/menubar/menubar.component';
     RouterModule.forRoot([
       { path:'',component: LandingComponent},
       { path:'top',component: TopMenuComponent},
-      { path:'navbar',component: NavBarComponent}
+      { path:'navbar',component: NavBarComponent},
+      { path:'members',component: MembersComponent}
     ])
   ],
   providers: [],
