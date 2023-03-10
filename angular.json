@@ -85,11 +85,8 @@
         }
       }
     }
-<<<<<<< HEAD
-=======
   },
   "cli": {
     "analytics": false
->>>>>>> origin/Y_work
   }
 }

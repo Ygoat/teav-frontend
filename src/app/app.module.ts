@@ -1,18 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-<<<<<<< HEAD
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-=======
 import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -41,7 +28,6 @@ import { MembersComponent } from './pages/members/members.component';
       { path:'navbar',component: NavBarComponent},
       { path:'members',component: MembersComponent}
     ])
->>>>>>> origin/Y_work
   ],
   providers: [],
   bootstrap: [AppComponent]
