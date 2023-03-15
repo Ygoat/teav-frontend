@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { MemberManagerService  } from 'src/app/service/member-manager.service';
+import { MemberManagerService  } from 'src/app/pages/members/service/member-manager.service';
+import { APIMmebersList, MembersList } from './model/member-list.model'
 
 @Component({
   selector: 'app-members',
@@ -8,11 +9,11 @@ import { MemberManagerService  } from 'src/app/service/member-manager.service';
   providers: [MemberManagerService]
 })
 export class MembersComponent {
-  public members:any;
+  public members!:MembersList[];
   constructor(private _MemberManagerService:MemberManagerService){
-    this._MemberManagerService.getMemberName().subscribe((members) => {
-      console.log(members);
-      this.members = members;
+    this._MemberManagerService.getMemberName().subscribe((response) => {
+      this.members = response.content;
+      console.log(this.members[0].id) //コンソールにテスト出力
     })
   }
 }
