@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
 import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,6 +10,7 @@ import { TopMenuComponent } from './pages/top/top.component';
 import { NavBarComponent } from './utils/navbar/navbar.component';
 import { MenubarComponent } from './utils/menubar/menubar.component';
 import { MembersComponent } from './pages/members/members.component';
+import { MemberListComponent } from './pages/members/member-list/member-list.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { MembersComponent } from './pages/members/members.component';
     TopMenuComponent,
     NavBarComponent,
     MenubarComponent,
-    MembersComponent
+    MembersComponent,
+    MemberListComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     RouterModule.forRoot([
       { path:'',component: LandingComponent},
