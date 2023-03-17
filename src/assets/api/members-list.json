@@ -1,0 +1,20 @@
+{
+  "status":200,
+  "content":[
+  {
+    "id":1,
+    "name":"ryusuke",
+    "comeFrom":"japan",
+    "introduction":"始めまして。teavプロジェクトのCEOです。",
+    "fllow":10,
+    "fllower":20
+  },
+  {
+    "id":2,
+    "name":"向日葵",
+    "comeFrom":"japan",
+    "introduction":"始めまして。CEOの子分です。",
+    "fllow":10,
+    "fllower":20
+  }]
+}
