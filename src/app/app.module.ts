@@ -6,9 +6,9 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './pages/landing/landing.component';
-import { TopMenuComponent } from './pages/top/top.component';
-import { NavBarComponent } from './utils/navbar/navbar.component';
-import { MenubarComponent } from './utils/menubar/menubar.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { NavBarComponent } from './pages/utils/navbar/navbar.component';
+import { MenubarComponent } from './pages/utils/menubar/menubar.component';
 import { MembersComponent } from './pages/members/members.component';
 import { MemberListComponent } from './pages/members/member-list/member-list.component';
 
@@ -16,7 +16,7 @@ import { MemberListComponent } from './pages/members/member-list/member-list.com
   declarations: [
     AppComponent,
     LandingComponent,
-    TopMenuComponent,
+    ProjectsComponent,
     NavBarComponent,
     MenubarComponent,
     MembersComponent,
@@ -28,7 +28,7 @@ import { MemberListComponent } from './pages/members/member-list/member-list.com
     AppRoutingModule,
     RouterModule.forRoot([
       { path:'',component: LandingComponent},
-      { path:'top',component: TopMenuComponent},
+      { path:'projects',component: ProjectsComponent},
       { path:'navbar',component: NavBarComponent},
       { path:'members',component: MembersComponent}
     ])
