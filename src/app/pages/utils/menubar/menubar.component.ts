@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./menubar.component.scss']
 })
 export class MenubarComponent {
-
+  showUserPullDown:boolean;
+  constructor(){
+    this.showUserPullDown=false;
+  }
 }
