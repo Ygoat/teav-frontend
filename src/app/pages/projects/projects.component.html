@@ -1,9 +1,41 @@
 <app-menubar></app-menubar>
 
+
+
 <div class="relative flex justify-center">
-  <div class="absolute top-[200px] bg-red-200 z-50 px-5 py-1 rounded-full">
-  <h1 class="font-semibold">プロジェクト検索ページ</h1>
+  <div class="absolute top-[150px] min-w-[500px] z-50 lg:ml-6 lg:justify-end">
+    <div class="w-full max-w-lg lg:max-w-xs">
+      <label for="search" class="sr-only">Search</label>
+      <div class="relative">
+        <div
+          class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+        >
+          <svg
+            class="h-5 w-5 text-gray-400"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <input
+          id="search"
+          name="search"
+          class="block w-full min-w-[500px] leading-none min-h-[50px] rounded-md border-0 bg-white pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 placeholder:text-2xl placeholder:pt-2 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+          placeholder="プロジェクトを探す"
+          type="search"
+        />
+      </div>
+    </div>
   </div>
+  <!-- <div class="absolute top-[200px] bg-red-200 z-50 px-5 py-1 rounded-full">
+  <h1 class="font-semibold">プロジェクト検索ページ</h1>
+  </div> -->
 </div>
 <section class="relative block" style="height: 500px;">
   <div
@@ -29,7 +61,7 @@
       y="0"
     >
       <polygon
-        class="text-gray-300 fill-current"
+        class="text-yellow-200 fill-current"
         points="2560 0 2560 100 0 100"
       ></polygon>
     </svg>
