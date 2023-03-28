@@ -11,6 +11,7 @@ import { NavBarComponent } from './pages/utils/navbar/navbar.component';
 import { MenubarComponent } from './pages/utils/menubar/menubar.component';
 import { MembersComponent } from './pages/members/members.component';
 import { MemberListComponent } from './pages/members/member-list/member-list.component';
+import { ProjectsListComponent } from './pages/projects/projects-list/projects-list.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,14 @@ import { MemberListComponent } from './pages/members/member-list/member-list.com
     NavBarComponent,
     MenubarComponent,
     MembersComponent,
-    MemberListComponent
+    MemberListComponent,
+    ProjectsListComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    RouterModule.forChild([{path:'projects-list',component: ProjectsListComponent}]),
     RouterModule.forRoot([
       { path:'',component: LandingComponent},
       { path:'projects',component: ProjectsComponent},
@@ -36,4 +39,4 @@ import { MemberListComponent } from './pages/members/member-list/member-list.com
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

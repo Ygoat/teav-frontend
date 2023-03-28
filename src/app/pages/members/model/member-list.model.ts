@@ -1,4 +1,4 @@
-export interface APIMmebersList {
+export interface APIMembersList {
   status:number;
   content:MembersList[];
 }

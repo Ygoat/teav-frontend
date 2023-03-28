@@ -3,10 +3,10 @@ import { Env } from 'environment/env.dev';
 
 const apiEndpoint = Env.apiEndPoint
 export  const Apis = {
-  MemberList : generatePath(Functions.memberList),
-  ProjectList : generatePath(Functions.projectList),
+  MemberList : uriBuilder(Functions.memberList),
+  ProjectList : uriBuilder(Functions.projectList),
 }
 
-function generatePath(apiName:string){
+function uriBuilder(apiName:string){
   return apiEndpoint + apiName;
 }

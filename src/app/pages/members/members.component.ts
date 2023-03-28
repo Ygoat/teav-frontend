@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MemberManagerService  } from 'src/app/pages/members/service/member-manager.service';
-import { APIMmebersList, MembersList } from './model/member-list.model'
+import { APIMembersList, MembersList } from './model/member-list.model'
 
 @Component({
   selector: 'app-members',
@@ -9,11 +9,11 @@ import { APIMmebersList, MembersList } from './model/member-list.model'
   providers: [MemberManagerService]
 })
 export class MembersComponent {
-  public members!:MembersList[];
-  constructor(private _MemberManagerService:MemberManagerService){
-    this._MemberManagerService.getMemberName().subscribe((response) => {
-      this.members = response.content;
-      console.log(this.members[0].id) //コンソールにテスト出力
+  result:any
+  constructor(private MemberManagerService:MemberManagerService){
+    this.MemberManagerService.getMemberName().subscribe((result) => {
+      this.result = result.content;
+      console.log(this.result[0].name) //コンソールにテスト出力
     })
   }
 }
